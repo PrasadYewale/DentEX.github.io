@@ -17,6 +17,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive-style.css">
 
+    <!--AOS library links-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
@@ -72,7 +77,7 @@
         <div class="banner_wrapper wrapper">
           <div class="container">
             <div class="row align-items-center">
-              <div class="pt-5">
+              <div class="pt-5" data-aos="fade-up" data-aos-duration="1000">
                 <h1>Dental Care at DentEX</h1>
                 <h2>Best Dentistry</h2>
                 <p>From dental cleanings to smile makeovers, our dedicated dental team is here for anything you or your family needs to take care of your oral health. We are passionate about what we do, and our top priority is making sure that you and your family feel confident about your smile.</p>
@@ -84,7 +89,7 @@
         </div>
   
         <div class="wrapper pb-0">
-          <div class="container">
+          <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
               <div class="col-md-4 col-sm-6 mb-4">
                 <div class="card text-center">
@@ -129,7 +134,7 @@
       <!--ABOUT SECTION-->
       <section id="about" class="about_wrapper wrapper">
       
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
           <div class="row">
             <h5 class="subheading">About</h5>
             <h2 class="head1">ABOUT US</h2>
@@ -169,11 +174,11 @@
         </div>
     </section>
   
-      <!--END ABOUT SECTION-->
+    <!--END ABOUT SECTION-->
 
-
+    <!--Services Section-->
     <section id="services" class="services_wrapper wrapper" >
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
         <div class="row">
           <div class="col-sm-12 text-center mb-5">
             <h3>Our Services</h3>
@@ -249,10 +254,11 @@
         </div>
       </div>
     </section>
+    <!--Services section exit-->
 
     <!-- Team section --> 
     <section id="team" class="team_wrapper wrapper">
-        <div class="container">
+        <div class="container"data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-sm-12 text-center mb-5">
                     <h3 class="text-black">Our Dentists</h3>
@@ -321,7 +327,7 @@
 
     <!-- Gallery section --> 
     <section id="gallery" class="gallery_wrapper wrapper">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="2000">
             <div class="row">
                 <div class="col-sm-12 text-center mb-5">
                     <h3>Our Gallery</h3>
@@ -351,7 +357,7 @@
 
     <!-- Testimonial section --> 
     <section id="testimonial" class="testimonial_wrapper wrapper">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-sm-12 text-center mb-4">
                     <h3 class="text-black">Testimonials</h3>
@@ -378,7 +384,7 @@
 
     <!--Appointment section --> 
     <section class="appointment_wrapper wrapper">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-8 col-10">
                     <h3>Request your appointment and start your smile makeover!</h3>
@@ -392,7 +398,7 @@
 
     <!-- Blog section --> 
     <section id="blog" class="blog_wrapper wrapper">
-        <div class="container">
+        <div class="container" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-sm-12 text-center mb-5">
                     <h3 class="text-black">Latest Blog</h3>
@@ -445,15 +451,31 @@
     <!-- Blog Section Exit  -->
 
     <!-- Footer section --> 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" style="color: #fc5185;"><u>DentEX Location</u></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30252.77136531666!2d73.78999457618086!3d18.592224991494092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b96e4555555d%3A0x60908a103e1c3f9d!2sRuby%20Hall%20Clinic%20PCMC%20(Pimple%20Saudagar)!5e0!3m2!1sen!2sin!4v1662107772776!5m2!1sen!2sin" width="430" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+      </div>
+  </div>
     <section id="contact" class="footer_wrapper wrapper">
-        <div class="container pb-3">
+        <div class="container pb-3" data-aos="fade-up" data-aos-duration="1000">
             <div class="row">
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5>Clinic Location</h5>
                     
                     <div class="contact-info">
                         <ul class="list-unstyled p-0">
-                            <li><a href="#"><i class="fa fa-home me-3"></i>First Floor , Ruby Hall , Pimple Saudagar</a></li>
+                            <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-home me-3"></i>First Floor , Ruby Hall , Pimple Saudagar</a></li>
                             <li><a href="#"><i class="fa fa-phone me-3"></i>+91 8668742718</a></li>
                             <li><a href="#"><i class="fa fa-envelope me-3"></i>prasad24024@gmail.com</a></li>
                         </ul>
@@ -503,7 +525,7 @@
 
             </div>
         </div>
-        <div class="container-fluid copyright-section">
+        <div class="container-fluid copyright-section" >
             <p class="p-0">Copyright <a href="#">© Prasad Yewale.</a> All Rights Reserved</p>
         </div>
     </section>
@@ -516,6 +538,12 @@
 
     <!-- Custom Js Link -->
     <script src="js/main.js"></script>
+
+    <!--AOS Library-->
+    <script>
+      AOS.init();
+    </script>
+
 </body>
 
 </html>
